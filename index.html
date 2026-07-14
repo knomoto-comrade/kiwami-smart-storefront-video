@@ -1,0 +1,922 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>日本の極み スマートギフト｜店頭動画補足資料</title>
+
+  <!-- YakuHanJPs + Noto Sans JP -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/yakuhanjp@4.0.0/dist/css/yakuhanmp_noto.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
+
+  <style>
+    /* ============================================================
+       Design Tokens — 株式会社カムラッド Design System
+       ============================================================ */
+    :root {
+      /* --- font --- */
+      --font-family-primary: YakuHanJPs_Noto;
+      --font-family-stack: YakuHanJPs_Noto, 'Noto Sans JP', sans-serif;
+      --font-size-base: 18px;
+      --font-weight-base: 500;
+      --font-line-height-base: 31.5px;
+      --font-size-xs: 10px;
+      --font-size-sm: 12px;
+      --font-size-md: 14px;
+      --font-size-lg: 16px;
+      --font-size-xl: 17px;
+      --font-size-2xl: 18px;
+      --font-size-3xl: 20px;
+      --font-size-4xl: 22px;
+
+      /* --- color (light theme) --- */
+      --color-surface-base: #ffffff;
+      --color-surface-raised: #f5f5f5;
+      --color-text-primary: #1a1a1a;
+      --color-text-secondary: #0068b7;
+      --color-text-tertiary: #ffffff;
+      --color-text-muted: #666666;
+      --color-border: rgba(0, 0, 0, 0.08);
+      --color-border-strong: rgba(0, 0, 0, 0.14);
+
+      /* --- space --- */
+      --space-1: 2px;
+      --space-2: 5px;
+      --space-3: 10px;
+      --space-4: 12px;
+      --space-5: 16px;
+      --space-6: 19px;
+      --space-7: 20px;
+      --space-8: 21px;
+
+      /* --- radius --- */
+      --radius-xs: 50px;
+      --radius-sm: 100px;
+
+      /* --- motion --- */
+      --motion-instant: 400ms;
+      --motion-fast: 500ms;
+      --motion-normal: 1000ms;
+    }
+
+    /* ============================================================
+       Reset
+       ============================================================ */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 56px;
+    }
+
+    body {
+      font-family: var(--font-family-stack);
+      font-size: var(--font-size-base);
+      font-weight: var(--font-weight-base);
+      line-height: var(--font-line-height-base);
+      color: var(--color-text-primary);
+      background-color: var(--color-surface-base);
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      overflow-x: hidden;
+    }
+
+    a {
+      color: var(--color-text-secondary);
+      text-decoration: none;
+      transition: opacity var(--motion-instant);
+    }
+    a:hover { opacity: 0.7; }
+
+    /* --- Focus Visible (WCAG 2.2 AA) --- */
+    :focus-visible {
+      outline: 2px solid var(--color-text-secondary);
+      outline-offset: var(--space-1);
+      border-radius: var(--radius-xs);
+    }
+
+    /* ============================================================
+       Layout
+       ============================================================ */
+    .wrap {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 0 var(--space-7);
+    }
+
+    @media (min-width: 960px) {
+      .wrap {
+        margin-left: max(var(--space-7), calc(50vw - 380px - 110px));
+      }
+    }
+
+    /* ============================================================
+       Header
+       ============================================================ */
+    .header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background-color: var(--color-surface-base);
+      border-bottom: 1px solid var(--color-border);
+      padding: var(--space-4) var(--space-7);
+    }
+    @media (min-width: 960px) {
+      .header {
+        padding-left: 0;
+        padding-right: 0;
+      }
+      .header .wrap {
+        margin-left: max(var(--space-7), calc(50vw - 380px - 110px));
+        padding: 0 var(--space-7);
+      }
+    }
+    .header .wrap {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      max-width: none;
+    }
+    .header-brand {
+      display: flex;
+      align-items: center;
+      gap: var(--space-3);
+    }
+    .header-logo {
+      width: 28px; height: 28px;
+      border-radius: var(--radius-xs);
+      background: var(--color-text-secondary);
+      display: grid; place-items: center;
+      color: var(--color-text-tertiary);
+      font-size: var(--font-size-sm);
+      font-weight: 700;
+    }
+    .header-name {
+      font-size: var(--font-size-md);
+      font-weight: 700;
+    }
+    .header-badge {
+      font-size: var(--font-size-xs);
+      font-weight: 700;
+      color: var(--color-text-secondary);
+      background: rgba(0, 104, 183, 0.08);
+      padding: var(--space-1) var(--space-3);
+      border-radius: var(--radius-xs);
+      letter-spacing: 0.04em;
+    }
+
+    /* ============================================================
+       Hero
+       ============================================================ */
+    .hero {
+      padding: 56px 0 40px;
+      text-align: center;
+    }
+    .hero-eyebrow {
+      font-size: var(--font-size-xs);
+      font-weight: 700;
+      color: var(--color-text-secondary);
+      text-transform: uppercase;
+      letter-spacing: 0.18em;
+      margin-bottom: var(--space-5);
+    }
+    .hero-title {
+      font-size: 26px;
+      font-weight: 900;
+      line-height: 1.35;
+      margin-bottom: var(--space-5);
+    }
+    .hero-sub {
+      font-size: var(--font-size-md);
+      color: var(--color-text-muted);
+      max-width: 520px;
+      margin: 0 auto var(--space-7);
+      line-height: 1.8;
+    }
+    .hero-date {
+      font-size: var(--font-size-sm);
+      color: var(--color-text-muted);
+    }
+
+    /* ============================================================
+       TOC
+       ============================================================ */
+    /* --- TOC: Mobile (inline) --- */
+    .toc {
+      margin-bottom: 48px;
+      padding: var(--space-5) 0;
+    }
+    .toc-label {
+      font-size: var(--font-size-xs);
+      font-weight: 700;
+      color: var(--color-text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      margin-bottom: var(--space-3);
+    }
+    .toc-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+    }
+    .toc-item a {
+      font-size: var(--font-size-sm);
+      display: flex;
+      align-items: baseline;
+      gap: var(--space-2);
+      padding: 5px var(--space-3);
+      white-space: nowrap;
+      color: var(--color-text-primary);
+      opacity: 0.5;
+      transition: opacity 0.25s ease, color 0.25s ease, background 0.25s ease;
+      border-radius: 4px;
+      line-height: 1.4;
+    }
+    .toc-item a:hover {
+      opacity: 0.8;
+      background: var(--color-surface-raised);
+    }
+    .toc-item.is-active a {
+      color: var(--color-text-secondary);
+      opacity: 1;
+      background: rgba(0, 104, 183, 0.06);
+    }
+    .toc-item.is-active .toc-num {
+      color: var(--color-text-secondary);
+    }
+    .toc-num {
+      font-size: var(--font-size-xs);
+      font-weight: 700;
+      color: var(--color-text-muted);
+      min-width: 18px;
+      transition: color 0.25s ease;
+    }
+
+    /* --- TOC: Desktop (right sidebar) --- */
+    @media (min-width: 960px) {
+      .toc {
+        position: fixed;
+        top: 70px;
+        right: max(16px, calc(50vw - 380px - 110px - 200px));
+        width: 200px;
+        max-height: calc(100vh - 90px);
+        overflow-y: auto;
+        margin-bottom: 0;
+        padding: 0;
+      }
+      .toc::-webkit-scrollbar { width: 0; }
+      .toc-label { display: block; }
+    }
+
+    /* ============================================================
+       Section
+       ============================================================ */
+    .sec {
+      margin-bottom: 48px;
+      padding-bottom: 48px;
+      border-bottom: 1px solid var(--color-border);
+    }
+    .sec:last-of-type { border-bottom: none; }
+    .sec-eyebrow {
+      font-size: var(--font-size-xs);
+      font-weight: 700;
+      color: var(--color-text-secondary);
+      text-transform: uppercase;
+      letter-spacing: 0.18em;
+      margin-bottom: var(--space-3);
+    }
+    .sec-title {
+      font-size: var(--font-size-4xl);
+      font-weight: 700;
+      margin-bottom: var(--space-7);
+      line-height: 1.45;
+    }
+    .sec-text {
+      font-size: var(--font-size-md);
+      color: var(--color-text-muted);
+      line-height: var(--font-line-height-base);
+      margin-bottom: var(--space-7);
+    }
+    .sec-text strong {
+      color: var(--color-text-primary);
+      font-weight: 700;
+    }
+
+    /* ============================================================
+       Timeline
+       ============================================================ */
+    .tl {
+      position: relative;
+      padding-left: 26px;
+      margin-bottom: var(--space-7);
+    }
+    .tl::before {
+      content: '';
+      position: absolute;
+      left: 5px; top: 6px; bottom: 6px;
+      width: 1px;
+      background: var(--color-border-strong);
+    }
+    .tl-item {
+      position: relative;
+      padding-bottom: var(--space-7);
+    }
+    .tl-item:last-child { padding-bottom: 0; }
+    .tl-dot {
+      position: absolute;
+      left: -24px; top: 6px;
+      width: 11px; height: 11px;
+      border-radius: var(--radius-sm);
+      border: 2px solid var(--color-text-secondary);
+      background: var(--color-surface-base);
+    }
+    .tl-dot--done {
+      background: var(--color-text-secondary);
+      border-color: var(--color-text-secondary);
+    }
+    .tl-dot--now {
+      background: var(--color-text-secondary);
+      box-shadow: 0 0 0 4px rgba(0, 104, 183, 0.18);
+    }
+    .tl-date {
+      font-size: var(--font-size-xs);
+      font-weight: 700;
+      color: var(--color-text-muted);
+      margin-bottom: var(--space-1);
+    }
+    .tl-title {
+      font-size: var(--font-size-md);
+      font-weight: 700;
+      margin-bottom: var(--space-2);
+    }
+    .tl-desc {
+      font-size: var(--font-size-sm);
+      color: var(--color-text-muted);
+      line-height: 1.7;
+    }
+
+    /* ============================================================
+       Cards
+       ============================================================ */
+    .cards {
+      display: grid;
+      gap: var(--space-5);
+      margin-bottom: var(--space-7);
+    }
+    .cards--2 { grid-template-columns: 1fr 1fr; }
+
+    .card {
+      background: var(--color-surface-raised);
+      border: 1px solid var(--color-border);
+      border-radius: var(--space-3);
+      padding: var(--space-7);
+      transition: border-color var(--motion-instant);
+    }
+    .card:hover {
+      border-color: rgba(0, 104, 183, 0.30);
+    }
+    .card-label {
+      font-size: var(--font-size-xs);
+      font-weight: 700;
+      color: var(--color-text-secondary);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-bottom: var(--space-3);
+    }
+    .card-label--warn { color: #b45309; }
+    .card-title {
+      font-size: var(--font-size-lg);
+      font-weight: 700;
+      margin-bottom: var(--space-3);
+    }
+    .card-desc {
+      font-size: var(--font-size-sm);
+      color: var(--color-text-muted);
+      line-height: 1.75;
+    }
+
+    /* ============================================================
+       Page Cards
+       ============================================================ */
+    .pg {
+      background: var(--color-surface-raised);
+      border: 1px solid var(--color-border);
+      border-radius: var(--space-3);
+      overflow: hidden;
+      margin-bottom: var(--space-7);
+      transition: border-color var(--motion-instant);
+    }
+    .pg:hover { border-color: rgba(0, 104, 183, 0.30); }
+    .pg-head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: var(--space-5) var(--space-7);
+      border-bottom: 1px solid var(--color-border);
+    }
+    .pg-head-left {
+      display: flex;
+      align-items: center;
+      gap: var(--space-4);
+    }
+    .pg-icon {
+      font-size: var(--font-size-3xl);
+      line-height: 1;
+    }
+    .pg-name {
+      font-size: var(--font-size-lg);
+      font-weight: 700;
+    }
+    .pg-path {
+      font-size: var(--font-size-xs);
+      color: var(--color-text-muted);
+      font-family: 'SF Mono', 'Fira Code', monospace;
+      margin-top: var(--space-1);
+    }
+    .pg-body {
+      padding: var(--space-5) var(--space-7);
+    }
+    .pg-desc {
+      font-size: var(--font-size-md);
+      color: var(--color-text-muted);
+      line-height: var(--font-line-height-base);
+      margin-bottom: var(--space-5);
+    }
+    .pg-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--space-2);
+      list-style: none;
+    }
+    .pg-tag {
+      font-size: var(--font-size-xs);
+      color: var(--color-text-muted);
+      background: rgba(0, 0, 0, 0.04);
+      border: 1px solid var(--color-border);
+      padding: var(--space-1) var(--space-3);
+      border-radius: var(--radius-xs);
+    }
+
+    /* ============================================================
+       Link Button
+       ============================================================ */
+    .lnk {
+      display: inline-flex;
+      align-items: center;
+      gap: var(--space-2);
+      font-size: var(--font-size-sm);
+      font-weight: 700;
+      color: var(--color-text-secondary);
+      background: rgba(0, 104, 183, 0.08);
+      border: 1px solid rgba(0, 104, 183, 0.15);
+      padding: var(--space-2) var(--space-5);
+      border-radius: var(--radius-xs);
+      text-decoration: none;
+      transition: background var(--motion-instant), border-color var(--motion-instant);
+    }
+    .lnk:hover {
+      opacity: 1;
+      background: rgba(0, 104, 183, 0.14);
+      border-color: rgba(0, 104, 183, 0.30);
+    }
+
+    /* ============================================================
+       Badge
+       ============================================================ */
+    .bdg {
+      display: inline-flex;
+      align-items: center;
+      gap: 3px;
+      font-size: var(--font-size-xs);
+      font-weight: 700;
+      padding: var(--space-1) var(--space-3);
+      border-radius: var(--radius-xs);
+    }
+    .bdg--free {
+      background: rgba(16, 185, 129, 0.10);
+      color: #059669;
+    }
+    .bdg--pro {
+      background: rgba(217, 119, 6, 0.10);
+      color: #b45309;
+    }
+    .bdg--ok {
+      background: rgba(16, 185, 129, 0.10);
+      color: #059669;
+    }
+    .bdg--wait {
+      background: rgba(0, 104, 183, 0.10);
+      color: var(--color-text-secondary);
+    }
+    .bdg--auth {
+      background: rgba(0, 0, 0, 0.04);
+      color: var(--color-text-muted);
+    }
+
+    /* ============================================================
+       Table
+       ============================================================ */
+    .tbl {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: var(--space-7);
+      font-size: var(--font-size-sm);
+    }
+    .tbl th, .tbl td {
+      text-align: left;
+      padding: var(--space-4) var(--space-5);
+      border-bottom: 1px solid var(--color-border);
+      line-height: 1.6;
+    }
+    .tbl th {
+      font-size: var(--font-size-xs);
+      font-weight: 700;
+      line-height: 1.4;
+      color: var(--color-text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+    }
+    .tbl td {
+      color: var(--color-text-muted);
+    }
+    .tbl td:first-child {
+      color: var(--color-text-primary);
+    }
+
+    /* ============================================================
+       Callout
+       ============================================================ */
+    .co {
+      border-radius: var(--space-3);
+      padding: var(--space-7);
+      margin-bottom: var(--space-7);
+    }
+    .co--info {
+      background: rgba(0, 104, 183, 0.05);
+      border: 1px solid rgba(0, 104, 183, 0.15);
+    }
+    .co--warn {
+      background: rgba(217, 119, 6, 0.05);
+      border: 1px solid rgba(217, 119, 6, 0.12);
+    }
+    .co--ok {
+      background: rgba(16, 185, 129, 0.05);
+      border: 1px solid rgba(16, 185, 129, 0.12);
+    }
+    .co-title {
+      font-size: var(--font-size-sm);
+      font-weight: 700;
+      margin-bottom: var(--space-3);
+    }
+    .co--info .co-title { color: var(--color-text-secondary); }
+    .co--warn .co-title { color: #b45309; }
+    .co--ok .co-title { color: #059669; }
+    .co-text {
+      font-size: var(--font-size-sm);
+      color: var(--color-text-muted);
+      line-height: 1.8;
+    }
+
+    /* ============================================================
+       Journey
+       ============================================================ */
+    .jn { margin-bottom: var(--space-7); }
+    .jn-step {
+      display: flex;
+      align-items: flex-start;
+      gap: var(--space-5);
+      margin-bottom: var(--space-3);
+    }
+    .jn-num {
+      width: 32px; height: 32px;
+      border-radius: var(--radius-sm);
+      background: var(--color-text-secondary);
+      color: var(--color-text-tertiary);
+      display: grid; place-items: center;
+      font-size: var(--font-size-md);
+      font-weight: 700;
+      flex-shrink: 0;
+    }
+    .jn-body { flex: 1; padding-top: var(--space-1); }
+    .jn-step-title {
+      font-size: var(--font-size-lg);
+      font-weight: 700;
+      margin-bottom: var(--space-2);
+    }
+    .jn-step-desc {
+      font-size: var(--font-size-sm);
+      color: var(--color-text-muted);
+      line-height: 1.75;
+    }
+    .jn-arrow {
+      text-align: center;
+      padding: var(--space-2) 0 var(--space-3);
+      color: var(--color-text-muted);
+      font-size: var(--font-size-lg);
+      padding-left: var(--space-3);
+    }
+
+    /* ============================================================
+       Privacy Grid
+       ============================================================ */
+    .prv { display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-5); margin-bottom: var(--space-7); }
+    .prv-item {
+      background: var(--color-surface-raised);
+      border: 1px solid var(--color-border);
+      border-radius: var(--space-3);
+      padding: var(--space-7);
+    }
+    .prv-art {
+      font-size: var(--font-size-xs);
+      font-weight: 700;
+      color: var(--color-text-secondary);
+      margin-bottom: var(--space-2);
+    }
+    .prv-title {
+      font-size: var(--font-size-md);
+      font-weight: 700;
+      margin-bottom: var(--space-3);
+    }
+    .prv-text {
+      font-size: var(--font-size-sm);
+      color: var(--color-text-muted);
+      line-height: 1.7;
+    }
+    .prv-text strong { color: var(--color-text-primary); font-weight: 700; }
+
+    /* strong in callout */
+    .co-text strong { color: var(--color-text-primary); }
+
+    /* ============================================================
+       Footer
+       ============================================================ */
+    .footer {
+      border-top: 1px solid var(--color-border);
+      padding: 32px 0;
+      margin-top: 48px;
+    }
+    .footer-text {
+      font-size: var(--font-size-xs);
+      color: var(--color-text-muted);
+      text-align: center;
+      line-height: 1.8;
+    }
+
+    /* ============================================================
+       Responsive
+       ============================================================ */
+    @media (max-width: 640px) {
+      .cards--2 { grid-template-columns: 1fr; }
+      .prv { grid-template-columns: 1fr; }
+      .hero-title { font-size: var(--font-size-4xl); }
+    }
+
+    @media (max-width: 959px) {
+      .toc {
+        padding: var(--space-5) var(--space-7);
+        border-bottom: 1px solid var(--color-border);
+      }
+    }
+
+    /* Project additions — 日本の極み スマートギフト 店頭動画補足資料 */
+    :root {
+      --brand-gold: #bc9940;
+      --brand-brown: #663300;
+      --brand-cream: #faf7ef;
+    }
+    .header-logo { background: var(--brand-gold); }
+    .header-badge { color: #7a5c18; background: rgba(188, 153, 64, 0.13); }
+    .hero { text-align: left; }
+    .hero-sub { margin-left: 0; max-width: 720px; }
+    .lead-copy { font-family: 'Noto Serif JP', 'Yu Mincho', serif; font-size: 24px; line-height: 1.55; color: var(--brand-brown); margin-bottom: var(--space-7); }
+    .table-scroll { overflow-x: auto; margin-bottom: var(--space-7); }
+    .table-scroll .tbl { margin-bottom: 0; min-width: 680px; }
+    .tbl td a { word-break: break-all; }
+    .video-box { margin: var(--space-7) 0; border: 1px solid var(--color-border); border-radius: 10px; overflow: hidden; background: #17130e; }
+    .video-box video { display: block; width: 100%; max-height: 540px; background: #17130e; }
+    .video-caption { padding: var(--space-5) var(--space-7); color: #f7f1e7; font-size: var(--font-size-sm); line-height: 1.7; }
+    .video-caption a { color: #f7d98a; }
+    .timeline { display: grid; gap: var(--space-3); margin: var(--space-7) 0; }
+    .timeline-row { display: grid; grid-template-columns: 76px minmax(150px, 0.8fr) minmax(250px, 1.5fr) 110px; gap: var(--space-5); align-items: center; padding: var(--space-5); border: 1px solid var(--color-border); border-left: 5px solid var(--brand-gold); border-radius: 8px; background: var(--color-surface-base); }
+    .timeline-time { font-size: var(--font-size-sm); font-weight: 800; color: #7a5c18; white-space: nowrap; }
+    .timeline-title { font-size: var(--font-size-base); font-weight: 800; color: var(--color-text-primary); }
+    .timeline-copy { font-size: var(--font-size-sm); line-height: 1.65; }
+    .timeline-copy strong { color: var(--brand-brown); }
+    .timeline-state { font-size: var(--font-size-xs); font-weight: 800; text-align: center; padding: 5px 7px; border-radius: 999px; color: #17653c; background: #e9f5ec; }
+    .timeline-state--hold { color: #7a5c18; background: #fbf1d6; }
+    .flow { display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: var(--space-3); margin: var(--space-7) 0; }
+    .flow-item { min-height: 112px; padding: var(--space-5); border-top: 4px solid var(--brand-gold); background: var(--brand-cream); }
+    .flow-num { font-size: var(--font-size-xs); color: #7a5c18; font-weight: 800; }
+    .flow-title { margin-top: 8px; font-weight: 800; line-height: 1.45; }
+    .flow-desc { margin-top: 6px; font-size: var(--font-size-xs); color: var(--color-text-muted); line-height: 1.55; }
+    .status-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--space-5); margin: var(--space-7) 0; }
+    .status-card { padding: var(--space-6); border: 1px solid var(--color-border); border-radius: 8px; background: var(--color-surface-base); }
+    .status-card--ok { border-top: 4px solid #3b9462; }
+    .status-card--hold { border-top: 4px solid var(--brand-gold); }
+    .status-label { font-size: var(--font-size-xs); font-weight: 800; color: var(--color-text-muted); }
+    .status-title { margin: 7px 0; font-size: var(--font-size-lg); font-weight: 800; }
+    .status-desc { font-size: var(--font-size-sm); line-height: 1.7; }
+    .spec-list { display: grid; gap: var(--space-3); margin-bottom: var(--space-7); }
+    .spec-item { display: grid; grid-template-columns: 150px 1fr; gap: var(--space-5); padding-bottom: var(--space-3); border-bottom: 1px solid var(--color-border); }
+    .spec-key { font-size: var(--font-size-xs); font-weight: 800; color: var(--color-text-muted); }
+    .spec-value { font-size: var(--font-size-sm); line-height: 1.75; }
+    .mini-list { padding-left: 1.2em; color: var(--color-text-muted); font-size: var(--font-size-sm); line-height: 1.8; }
+    .mini-list li + li { margin-top: 5px; }
+    .toc-details > summary { display: none; }
+    @media (max-width: 959px) {
+      .toc-details > summary { display: block; cursor: pointer; font-size: 14px; font-weight: 700; color: #7a5c18; list-style-position: inside; }
+      .toc-details[open] > summary { margin-bottom: var(--space-3); }
+      .flow { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    }
+    @media (max-width: 680px) {
+      :root { --font-size-xs: 12px; --font-size-sm: 14px; --font-size-md: 15px; --font-size-lg: 16px; --font-size-base: 16px; }
+      .header-badge { display: none; }
+      .timeline-row { grid-template-columns: 64px 1fr; }
+      .timeline-copy { grid-column: 2; }
+      .timeline-state { grid-column: 2; justify-self: start; }
+      .flow { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .status-grid { grid-template-columns: 1fr; }
+      .spec-item { grid-template-columns: 1fr; gap: var(--space-2); }
+      .table-scroll::before { content: '表は横にスクロールできます'; display: block; font-size: 12px; color: var(--color-text-muted); margin-bottom: 6px; }
+      .video-caption { padding: var(--space-5); }
+    }
+  </style>
+</head>
+
+<body>
+  <header class="header">
+    <div class="wrap">
+      <div class="header-brand">
+        <div class="header-logo">案</div>
+        <span class="header-name">日本の極み スマートギフト｜店頭動画補足資料</span>
+      </div>
+      <span class="header-badge">権利確認前・指定関係者限定</span>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="hero">
+      <p class="hero-eyebrow">CLIENT EXPLANATION / 30-SECOND VIDEO</p>
+      <h1 class="hero-title">おいしさの背景まで、<br>贈る。</h1>
+      <p class="hero-sub">推奨30秒構成と仮編集MP4の対応関係を、百貨店店頭で説明しやすい順番に整理した補足資料です。</p>
+      <p class="hero-date">2026年7月14日｜日本の極み スマートギフト 店頭動画案</p>
+      <div class="co co--warn"><p class="co-title">権利確認前・指定関係者限定</p><p class="co-text">利用許諾書などの確認資料が揃う前は、転送・複製・公開・店頭掲出を行わないでください。構成承認は素材利用許諾を意味しません。</p></div>
+      <div class="co co--info"><p class="co-title">今回の共有範囲</p><p class="co-text">この資料と仮編集MP4は、依頼元が指定したBacklog Gitの当該ディレクトリ内での構成確認に限定します。別の共有先への複製・転送・公開は行わず、権利台帳の確認後に共有範囲を改めて確定します。</p></div>
+    </section>
+
+    <nav class="toc" aria-label="目次">
+      <details class="toc-details" open>
+        <summary>目次を開く</summary>
+        <p class="toc-label">目次</p>
+        <ol class="toc-list">
+          <li class="toc-item"><a href="#s0"><span class="toc-num">--</span>結論</a></li>
+          <li class="toc-item"><a href="#s1"><span class="toc-num">01</span>30秒の流れ</a></li>
+          <li class="toc-item"><a href="#s2"><span class="toc-num">02</span>6場面の対応表</a></li>
+          <li class="toc-item"><a href="#s3"><span class="toc-num">03</span>仮編集で確認できること</a></li>
+          <li class="toc-item"><a href="#s4"><span class="toc-num">04</span>次の確定事項</a></li>
+          <li class="toc-item"><a href="#s5"><span class="toc-num">05</span>参照資料</a></li>
+        </ol>
+      </details>
+    </nav>
+
+    <section id="s0" class="sec">
+      <p class="sec-eyebrow">EXECUTIVE SUMMARY</p>
+      <h2 class="sec-title">結論：6場面すべてが推奨30秒構成に沿っています</h2>
+      <p class="lead-copy">止める → 信頼をつくる → 選べる価値を伝える → 売場で相談へつなぐ。</p>
+      <div class="co co--ok">
+        <p class="co-title">構成の適合判定：企画意図・秒数・コピーは一致</p>
+        <p class="co-text">既存の企画書にある<strong>0–3秒／3–7秒／7–11秒／11–16秒／16–23秒／23–30秒</strong>の6区間と、仮編集MP4の区切り・テロップは一致しています。各場面に共通の「日本の極み スマートギフト｜受け取った方が選べる食品ギフト」を置き、途中から見ても商品価値が分かる設計です。</p>
+      </div>
+      <div class="co co--info">
+        <p class="co-title">今回ご判断いただきたいこと</p>
+        <p class="co-text"><strong>この30秒案を構成案としてご承認いただけるか、ご判断ください。</strong>ここで確認するのは企画の骨子です。店頭掲出、対外配布、完成尺、画面比率、素材の利用条件は別途確定します。</p>
+      </div>
+      <div class="co co--warn">
+        <p class="co-title">ただし、現段階は「構成確認用の仮編集」です</p>
+        <p class="co-text">1〜4場面は取得動画を使った構成確認、5〜6場面は支給資料由来の静止画を仮置きしています。店頭掲出・対外配布・本編集への流用は、素材ごとの利用許諾書などの確認資料、現行商品・クリーンな元マスター、正式な交換サイト画面、店頭媒体仕様を確定した後に行います。</p>
+      </div>
+    </section>
+
+    <section id="s1" class="sec">
+      <p class="sec-eyebrow">01 — FLOW</p>
+      <h2 class="sec-title">30秒で伝える順番</h2>
+      <p class="sec-text">百貨店の通路では、最初から最後まで見てもらえるとは限りません。そのため、各区間を単独でも意味が通る短いメッセージにしています。</p>
+      <div class="flow">
+        <div class="flow-item"><div class="flow-num">01 / 0–3秒</div><div class="flow-title">まず止める</div><div class="flow-desc">一動作のシズル</div></div>
+        <div class="flow-item"><div class="flow-num">02 / 3–7秒</div><div class="flow-title">背景を見せる</div><div class="flow-desc">産地・つくり手</div></div>
+        <div class="flow-item"><div class="flow-num">03 / 7–11秒</div><div class="flow-title">質感を伝える</div><div class="flow-desc">旬・手仕事</div></div>
+        <div class="flow-item"><div class="flow-num">04 / 11–16秒</div><div class="flow-title">幅を見せる</div><div class="flow-desc">日本各地の味</div></div>
+        <div class="flow-item"><div class="flow-num">05 / 16–23秒</div><div class="flow-title">選べるを説明</div><div class="flow-desc">カード・Web</div></div>
+        <div class="flow-item"><div class="flow-num">06 / 23–30秒</div><div class="flow-title">相談へ着地</div><div class="flow-desc">ギフトサロン</div></div>
+      </div>
+      <div class="co co--info">
+        <p class="co-title">この順番にする理由</p>
+        <p class="co-text">食品の色・湯気・手の動きで視線をつかみ、産地と手仕事で上質さの根拠を示し、最後に「受け取った方が選べる」というスマートギフトの違いへ進みます。制度説明から始めないため、食のプレミアム感とサービス理解を両立できます。</p>
+      </div>
+    </section>
+
+    <section id="s2" class="sec">
+      <p class="sec-eyebrow">02 — ALIGNMENT CHECK</p>
+      <h2 class="sec-title">6場面の対応表</h2>
+      <div class="table-scroll">
+        <table class="tbl">
+          <thead><tr><th>時間</th><th>場面の役割</th><th>表示コピー</th><th>仮編集の映像</th><th>判定</th></tr></thead>
+          <tbody>
+            <tr><td>0–3秒</td><td><strong>一動作で、まず止める</strong></td><td>おいしさの背景まで、贈る。</td><td>スマート抹茶の一動作</td><td><span class="bdg bdg--ok">一致</span></td></tr>
+            <tr><td>3–7秒</td><td><strong>産地の空気と、つくり手</strong></td><td>産地と、つくり手が見える。</td><td>つや姫の産地・生産者</td><td><span class="bdg bdg--ok">一致</span></td></tr>
+            <tr><td>7–11秒</td><td><strong>手仕事を、質感で伝える</strong></td><td>旬と手仕事を、選び抜く。</td><td>焼き菓子の手作業</td><td><span class="bdg bdg--ok">一致</span></td></tr>
+            <tr><td>11–16秒</td><td><strong>選択肢の広がり</strong></td><td>日本各地の味を、ひとつのギフトに。</td><td>グルメカタログの商品群</td><td><span class="bdg bdg--ok">一致</span></td></tr>
+            <tr><td>16–23秒</td><td><strong>“スマート”の意味を見せる</strong></td><td>受け取った方が、選べる。</td><td>支給資料のカード参考静止画</td><td><span class="bdg bdg--wait">構成一致・仮置き</span></td></tr>
+            <tr><td>23–30秒</td><td><strong>贈答感と売場案内で着地</strong></td><td>日本の極み スマートギフト<br>ギフトサロンでおたずねください</td><td>支給資料のPRブース参考静止画</td><td><span class="bdg bdg--wait">構成一致・仮置き</span></td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="co co--info">
+        <p class="co-title">判定の読み方</p>
+        <p class="co-text"><strong>「一致」</strong>は、企画書の役割・秒数・表示コピーと仮編集がそのまま対応している区間です。<strong>「構成一致・仮置き」</strong>は役割・秒数・コピーは一致しているものの、本編集では現行パッケージ、正式な交換サイト画面、正式ロゴ、承認済み商品写真へ差し替える区間です。</p>
+      </div>
+    </section>
+
+    <section id="s3" class="sec">
+      <p class="sec-eyebrow">03 — ROUGHCUT</p>
+      <h2 class="sec-title">仮編集で確認できること</h2>
+      <div class="video-box">
+        <video controls playsinline preload="metadata" src="kiwami-smart-storefront-roughcut-v01.mp4">
+          お使いの環境では動画を再生できません。<a href="kiwami-smart-storefront-roughcut-v01.mp4">MP4を開く</a>
+        </video>
+        <div class="video-caption">仮編集 v01｜30秒・無音・1920×1080・H.264｜店頭掲出前の構成確認用<br>共有は依頼元指定のBacklog Git内に限定。利用許諾書などの確認資料が揃う前は転送・複製・公開・店頭掲出不可。<br><a href="kiwami-smart-storefront-roughcut-v01.mp4">動画ファイルを別ウィンドウで開く</a></div>
+      </div>
+      <div class="status-grid">
+        <div class="status-card status-card--ok"><div class="status-label">確認済み</div><div class="status-title">30秒・6区間</div><div class="status-desc">6場面の秒数、順番、各場面の表示コピーが企画書と一致しています。</div></div>
+        <div class="status-card status-card--ok"><div class="status-label">確認済み</div><div class="status-title">無音で成立</div><div class="status-desc">音声トラックなし。テロップと画だけで「食・背景・選べる・相談」が伝わる構成です。</div></div>
+        <div class="status-card status-card--hold"><div class="status-label">本編集で確定</div><div class="status-title">素材・媒体・権利</div><div class="status-desc">元マスター、現行商品、画面仕様、掲出期間、利用許諾は本編集前に確定します。</div></div>
+      </div>
+      <div class="co co--warn">
+        <p class="co-title">このMP4を完成動画として掲出しないでください</p>
+        <p class="co-text">YouTube取得動画と支給資料の静止画を使った仮編集であり、完成素材ではありません。対外配布・店頭掲出は、権利台帳の証憑確認、現行商品・表示・売場案内の承認、媒体の実機再生テストが完了してから行います。</p>
+      </div>
+    </section>
+
+    <section id="s4" class="sec">
+      <p class="sec-eyebrow">04 — DECISION &amp; NEXT</p>
+      <h2 class="sec-title">次に確定する4点</h2>
+      <p class="sec-text">構成案の承認後、下記4点が揃えば本編集へ着手できます。</p>
+      <div class="spec-list">
+        <div class="spec-item"><p class="spec-key">1｜構成・コピー</p><p class="spec-value">推奨コンセプト「おいしさの背景まで、贈る。」と6場面の順番・コピーを承認。15秒・45秒へ展開する場合は、同じ価値のどこまでを残すかを指定。</p></div>
+        <div class="spec-item"><p class="spec-key">2｜現行素材</p><p class="spec-value">現行パッケージ、カード、カタログ、ロゴ、商品写真、正式な交換サイト画面、必要な元マスターを支給または使用承認。終売・旧表示の素材は差し替え。</p></div>
+        <div class="spec-item"><p class="spec-key">3｜店頭仕様</p><p class="spec-value">設置店舗・売場、画面比率・解像度、視認距離、プレイヤー、音の可否、掲出期間、入稿締切を確定。</p></div>
+        <div class="spec-item"><p class="spec-key">4｜権利・表示</p><p class="spec-value">映像・静止画・肖像・商標・音源・フォント・商品表示について、媒体・地域・期間・編集・店頭上映・対外配布の利用許諾書などの確認資料を台帳で確認。</p></div>
+      </div>
+      <div class="co co--info">
+        <p class="co-title">本編集前の再生確認（実機受入）</p>
+        <p class="co-text">構成・コピーの承認後、<strong>画面比率／解像度／視認距離／安全な表示範囲／無音再生／ループ継ぎ目／再生機器との互換性／掲出終了時の差し替え／直前承認版へ戻す手順</strong>を、実機または同等環境で確認します。尺・比率・動画形式は媒体仕様確定後の暫定値です。</p>
+      </div>
+      <div class="co co--ok">
+        <p class="co-title">今回ご判断いただきたいこと</p>
+        <p class="co-text">まずは<strong>この30秒案を構成案としてご承認いただけるか、ご判断ください。</strong>これは構成の承認であり、店頭掲出・対外配布・完成尺や媒体仕様の承認ではありません。素材・権利・媒体条件が揃った後に本編集へ着手します。</p>
+      </div>
+    </section>
+
+    <section id="s5" class="sec">
+      <p class="sec-eyebrow">05 — REFERENCES</p>
+      <h2 class="sec-title">参照資料</h2>
+      <ul class="mini-list">
+        <li>支給PowerPoint「日本の極みSMG開発概要n (1)」</li>
+        <li>支給画像「image.png」</li>
+        <li><a href="https://www.youtube.com/playlist?list=PLwP3ZDV2ASevJ8mOWbdJPH2emd6r0PxQl" target="_blank" rel="noopener noreferrer">リンベル公式YouTube再生リスト「日本の極み」</a></li>
+        <li>企画・絵コンテ本体：<code>kiwami-smart-department-store-video-plan.html</code></li>
+        <li>仮編集：<code>kiwami-smart-storefront-roughcut-v01.mp4</code>（30秒・無音・H.264）</li>
+      </ul>
+      <div class="co co--info">
+        <p class="co-title">素材利用について</p>
+        <p class="co-text">構成承認は素材利用許諾を意味しません。本編集・店頭上映・対外配布の前に、映像・静止画・肖像・商標・音源・フォント・商品表示を素材単位で確認し、利用許諾書などの確認資料と利用条件を権利台帳へ記録します。</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap"><p class="footer-text">© 2026 株式会社カムラッド — 日本の極み スマートギフト 店頭動画補足資料<br>第三者素材の権利は各権利者に帰属します。権利確認前・指定関係者限定。</p></div>
+  </footer>
+
+</body>
+<script>
+(function() {
+  const sections = document.querySelectorAll('.sec[id]');
+  const tocItems = document.querySelectorAll('.toc-item');
+  const tocMap = {};
+  tocItems.forEach(function(item) { var a = item.querySelector('a'); if (a) tocMap[a.getAttribute('href').replace('#','')] = item; });
+  var current = '';
+  var observer = new IntersectionObserver(function(entries) {
+    entries.forEach(function(entry) { if (entry.isIntersecting) current = entry.target.id; });
+    tocItems.forEach(function(item) { item.classList.remove('is-active'); });
+    if (current && tocMap[current]) tocMap[current].classList.add('is-active');
+  }, { rootMargin: '-10% 0px -80% 0px', threshold: 0 });
+  sections.forEach(function(sec) { observer.observe(sec); });
+  if (tocItems.length > 0) tocItems[0].classList.add('is-active');
+  if (window.innerWidth <= 959) { var details = document.querySelector('.toc-details'); if (details) details.removeAttribute('open'); }
+})();
+</script>
+</html>
