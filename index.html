@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>日本の極み スマートギフト｜店頭動画補足資料</title>
+  <title>日本の極み スマートギフト｜百貨店店頭30秒 カードタイプ編集版 v04</title>
 
   <!-- YakuHanJPs + Noto Sans JP -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/yakuhanjp@4.0.0/dist/css/yakuhanmp_noto.css">
@@ -681,243 +681,286 @@
       }
     }
 
-    /* Project additions — 日本の極み スマートギフト 店頭動画補足資料 */
     :root {
-      --brand-gold: #bc9940;
-      --brand-brown: #663300;
-      --brand-cream: #faf7ef;
+      --brand-gold:#b88c36;
+      --brand-gold-deep:#8b6527;
+      --brand-brown:#4d351d;
+      --brand-dark:#17130f;
+      --brand-ivory:#f7f1e5;
+      --brand-green:#315f4d;
     }
-    .header-logo { background: var(--brand-gold); }
-    .header-badge { color: #7a5c18; background: rgba(188, 153, 64, 0.13); }
-    .hero { text-align: left; }
-    .hero-sub { margin-left: 0; max-width: 720px; }
-    .lead-copy { font-family: 'Noto Serif JP', 'Yu Mincho', serif; font-size: 24px; line-height: 1.55; color: var(--brand-brown); margin-bottom: var(--space-7); }
-    .table-scroll { overflow-x: auto; margin-bottom: var(--space-7); }
-    .table-scroll .tbl { margin-bottom: 0; min-width: 680px; }
-    .tbl td a { word-break: break-all; }
-    .video-box { margin: var(--space-7) 0; border: 1px solid var(--color-border); border-radius: 10px; overflow: hidden; background: #17130e; }
-    .video-box video { display: block; width: 100%; max-height: 540px; background: #17130e; }
-    .video-caption { padding: var(--space-5) var(--space-7); color: #f7f1e7; font-size: var(--font-size-sm); line-height: 1.7; }
-    .video-caption a { color: #f7d98a; }
-    .timeline { display: grid; gap: var(--space-3); margin: var(--space-7) 0; }
-    .timeline-row { display: grid; grid-template-columns: 76px minmax(150px, 0.8fr) minmax(250px, 1.5fr) 110px; gap: var(--space-5); align-items: center; padding: var(--space-5); border: 1px solid var(--color-border); border-left: 5px solid var(--brand-gold); border-radius: 8px; background: var(--color-surface-base); }
-    .timeline-time { font-size: var(--font-size-sm); font-weight: 800; color: #7a5c18; white-space: nowrap; }
-    .timeline-title { font-size: var(--font-size-base); font-weight: 800; color: var(--color-text-primary); }
-    .timeline-copy { font-size: var(--font-size-sm); line-height: 1.65; }
-    .timeline-copy strong { color: var(--brand-brown); }
-    .timeline-state { font-size: var(--font-size-xs); font-weight: 800; text-align: center; padding: 5px 7px; border-radius: 999px; color: #17653c; background: #e9f5ec; }
-    .timeline-state--hold { color: #7a5c18; background: #fbf1d6; }
-    .flow { display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: var(--space-3); margin: var(--space-7) 0; }
-    .flow-item { min-height: 112px; padding: var(--space-5); border-top: 4px solid var(--brand-gold); background: var(--brand-cream); }
-    .flow-num { font-size: var(--font-size-xs); color: #7a5c18; font-weight: 800; }
-    .flow-title { margin-top: 8px; font-weight: 800; line-height: 1.45; }
-    .flow-desc { margin-top: 6px; font-size: var(--font-size-xs); color: var(--color-text-muted); line-height: 1.55; }
-    .status-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--space-5); margin: var(--space-7) 0; }
-    .status-card { padding: var(--space-6); border: 1px solid var(--color-border); border-radius: 8px; background: var(--color-surface-base); }
-    .status-card--ok { border-top: 4px solid #3b9462; }
-    .status-card--hold { border-top: 4px solid var(--brand-gold); }
-    .status-label { font-size: var(--font-size-xs); font-weight: 800; color: var(--color-text-muted); }
-    .status-title { margin: 7px 0; font-size: var(--font-size-lg); font-weight: 800; }
-    .status-desc { font-size: var(--font-size-sm); line-height: 1.7; }
-    .spec-list { display: grid; gap: var(--space-3); margin-bottom: var(--space-7); }
-    .spec-item { display: grid; grid-template-columns: 150px 1fr; gap: var(--space-5); padding-bottom: var(--space-3); border-bottom: 1px solid var(--color-border); }
-    .spec-key { font-size: var(--font-size-xs); font-weight: 800; color: var(--color-text-muted); }
-    .spec-value { font-size: var(--font-size-sm); line-height: 1.75; }
-    .mini-list { padding-left: 1.2em; color: var(--color-text-muted); font-size: var(--font-size-sm); line-height: 1.8; }
-    .mini-list li + li { margin-top: 5px; }
-    .toc-details > summary { display: none; }
-    @media (max-width: 959px) {
-      .toc-details > summary { display: block; cursor: pointer; font-size: 14px; font-weight: 700; color: #7a5c18; list-style-position: inside; }
-      .toc-details[open] > summary { margin-bottom: var(--space-3); }
-      .flow { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    body { background:#fffdf9; }
+    .header-logo { background:var(--brand-gold); }
+    .header-badge { color:var(--brand-brown); background:rgba(184,140,54,.13); }
+    .hero { text-align:left; padding-top:64px; }
+    .hero-title { font-family:'Hiragino Mincho ProN','Yu Mincho',serif; color:var(--brand-brown); font-size:38px; line-height:1.42; word-break:keep-all; overflow-wrap:normal; }
+    .nowrap { white-space:nowrap; }
+    .hero-sub { margin-left:0; max-width:690px; font-size:15px; }
+    .hero-visual { margin:28px 0 0; overflow:hidden; border-radius:12px; background:var(--brand-dark); box-shadow:0 26px 70px rgba(72,50,21,.16); }
+    .hero-visual img { display:block; width:100%; height:auto; }
+    .hero-video { margin:28px 0 0; overflow:hidden; border-radius:12px; background:#000; box-shadow:0 26px 70px rgba(72,50,21,.20); }
+    .hero-video video { display:block; width:100%; height:auto; aspect-ratio:16/9; background:#000; }
+    .hero-video figcaption { padding:11px 14px; background:var(--brand-dark); color:rgba(255,255,255,.78); font-size:11px; line-height:1.65; }
+    .hero-note { display:flex; flex-wrap:wrap; gap:8px; margin-top:16px; }
+    .pill { display:inline-flex; align-items:center; gap:6px; padding:7px 12px; border:1px solid rgba(77,53,29,.14); border-radius:999px; background:#fff; color:var(--brand-brown); font-size:11px; font-weight:800; }
+    .pill::before { content:''; width:7px; height:7px; border-radius:50%; background:var(--brand-green); }
+    .lead-copy { font-family:'Hiragino Mincho ProN','Yu Mincho',serif; font-size:24px; line-height:1.7; color:var(--brand-brown); margin:0 0 20px; }
+    .decision-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:14px; margin:22px 0; }
+    .decision { border:1px solid var(--color-border); border-top:5px solid var(--brand-gold); border-radius:9px; padding:18px; background:#fff; }
+    .decision:nth-child(2){ border-top-color:var(--brand-green); }
+    .decision:nth-child(3){ border-top-color:var(--brand-dark); }
+    .decision-label { font-size:10px; color:var(--color-text-muted); font-weight:900; letter-spacing:.08em; }
+    .decision-title { margin-top:6px; color:var(--brand-brown); font-size:16px; font-weight:900; line-height:1.45; }
+    .decision-text { margin-top:7px; color:var(--color-text-muted); font-size:12px; line-height:1.75; }
+    .flow { display:grid; grid-template-columns:repeat(7,minmax(0,1fr)); gap:6px; margin:24px 0; }
+    .flow-step { position:relative; padding:12px 8px; min-height:88px; display:grid; place-items:center; text-align:center; border-radius:7px; background:var(--brand-ivory); color:var(--brand-brown); font-size:11px; font-weight:800; line-height:1.55; }
+    .flow-step--dark { background:var(--brand-dark); color:#fff; }
+    .flow-step--gold { background:var(--brand-gold); color:#fff; }
+    .screen-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:16px; margin:22px 0; }
+    .screen-card { overflow:hidden; border:1px solid rgba(0,0,0,.08); border-radius:9px; background:#fff; box-shadow:0 14px 34px rgba(48,35,16,.08); }
+    .screen-card img { width:100%; height:auto; display:block; aspect-ratio:16/9; object-fit:cover; }
+    .screen-caption { padding:12px 14px 14px; }
+    .screen-time { color:var(--brand-gold-deep); font-size:10px; font-weight:900; letter-spacing:.06em; }
+    .screen-title { margin-top:3px; color:var(--brand-brown); font-size:14px; font-weight:900; }
+    .screen-copy { margin-top:4px; color:var(--color-text-muted); font-size:11px; line-height:1.65; }
+    .timeline { display:grid; gap:10px; margin:22px 0; }
+    .timeline-row { display:grid; grid-template-columns:106px 150px 1fr; gap:16px; align-items:start; padding:14px 16px; border:1px solid var(--color-border); border-left:5px solid var(--brand-gold); border-radius:7px; background:#fff; }
+    .timeline-row--video { border-left-color:var(--brand-dark); background:#fbfaf7; }
+    .timeline-time { color:var(--brand-gold-deep); font-size:11px; font-weight:900; }
+    .timeline-role { color:var(--brand-brown); font-size:13px; font-weight:900; }
+    .timeline-copy { font-family:'Hiragino Mincho ProN','Yu Mincho',serif; color:var(--brand-brown); font-size:16px; font-weight:600; line-height:1.55; }
+    .timeline-note { margin-top:4px; font-family:var(--font-family-stack); color:var(--color-text-muted); font-size:10px; font-weight:500; line-height:1.6; }
+    .media-pair { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:16px; margin:22px 0; }
+    .media-panel { overflow:hidden; border-radius:9px; background:var(--brand-dark); color:#fff; }
+    .media-panel img { display:block; width:100%; height:auto; }
+    .media-panel figcaption { padding:12px 14px; font-size:11px; line-height:1.65; color:rgba(255,255,255,.82); }
+    .asset-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:12px; margin:22px 0; }
+    .asset-card { overflow:hidden; border:1px solid var(--color-border); border-radius:8px; background:#fff; }
+    .asset-card img { width:100%; aspect-ratio:4/3; object-fit:contain; display:block; padding:14px; background:#faf7f0; }
+    .asset-card--cover img { object-fit:cover; padding:0; }
+    .asset-card p { padding:10px 12px; color:var(--color-text-muted); font-size:10px; line-height:1.55; }
+    .board { margin:22px 0; overflow:hidden; border-radius:10px; border:1px solid var(--color-border); background:#fff; }
+    .board img { width:100%; height:auto; display:block; }
+    .board-caption { padding:12px 15px; color:var(--color-text-muted); font-size:11px; line-height:1.7; }
+    .palette { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:10px; margin:20px 0; }
+    .swatch { padding:44px 12px 12px; border-radius:8px; color:#fff; font-size:10px; font-weight:800; box-shadow:inset 0 0 0 1px rgba(0,0,0,.08); }
+    .swatch--ivory { color:var(--brand-brown); }
+    .rule-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:12px; margin:20px 0; }
+    .rule { padding:16px; border-radius:8px; background:var(--brand-ivory); }
+    .rule-title { color:var(--brand-brown); font-size:13px; font-weight:900; }
+    .rule-text { margin-top:6px; color:var(--color-text-muted); font-size:11px; line-height:1.7; }
+    .spec-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:12px; margin:20px 0; }
+    .spec { padding:16px; border:1px solid var(--color-border); border-radius:8px; background:#fff; }
+    .spec-key { color:var(--color-text-muted); font-size:9px; font-weight:900; letter-spacing:.08em; }
+    .spec-value { margin-top:7px; color:var(--brand-brown); font-size:15px; font-weight:900; line-height:1.45; }
+    .check-list { list-style:none; display:grid; gap:9px; margin:20px 0; }
+    .check-list li { position:relative; padding:13px 14px 13px 44px; border:1px solid var(--color-border); border-radius:7px; background:#fff; color:var(--brand-brown); font-size:12px; font-weight:700; line-height:1.6; }
+    .check-list li::before { content:'✓'; position:absolute; left:15px; top:13px; width:20px; height:20px; display:grid; place-items:center; border-radius:50%; background:var(--brand-green); color:#fff; font-size:11px; }
+    .pending-list { list-style:none; display:grid; gap:9px; margin:20px 0; }
+    .pending-list li { position:relative; padding:13px 14px 13px 44px; border:1px solid rgba(184,140,54,.35); border-radius:7px; background:#fffaf0; color:var(--brand-brown); font-size:12px; font-weight:700; line-height:1.6; }
+    .pending-list li::before { content:'!'; position:absolute; left:15px; top:13px; width:20px; height:20px; display:grid; place-items:center; border-radius:50%; background:var(--brand-gold); color:#fff; font-size:11px; }
+    .table-scroll { overflow-x:auto; margin:20px 0; }
+    .table-scroll .tbl { min-width:820px; margin-bottom:0; }
+    .co--gold { background:#fbf5e8; border-left-color:var(--brand-gold); }
+    .co--dark { background:#f2f0ed; border-left-color:var(--brand-dark); }
+    .co--gold .co-title,.co--dark .co-title { color:var(--brand-brown); }
+    .toc-details > summary { display:none; }
+    @media(max-width:959px){
+      .toc-details > summary { display:block; cursor:pointer; color:var(--brand-gold-deep); font-size:13px; font-weight:800; }
+      .toc-details[open] > summary { margin-bottom:10px; }
+      .decision-grid,.spec-grid { grid-template-columns:1fr; }
+      .flow { grid-template-columns:repeat(4,minmax(0,1fr)); }
     }
-    @media (max-width: 680px) {
-      :root { --font-size-xs: 12px; --font-size-sm: 14px; --font-size-md: 15px; --font-size-lg: 16px; --font-size-base: 16px; }
-      .header-badge { display: none; }
-      .timeline-row { grid-template-columns: 64px 1fr; }
-      .timeline-copy { grid-column: 2; }
-      .timeline-state { grid-column: 2; justify-self: start; }
-      .flow { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-      .status-grid { grid-template-columns: 1fr; }
-      .spec-item { grid-template-columns: 1fr; gap: var(--space-2); }
-      .table-scroll::before { content: '表は横にスクロールできます'; display: block; font-size: 12px; color: var(--color-text-muted); margin-bottom: 6px; }
-      .video-caption { padding: var(--space-5); }
+    @media(max-width:680px){
+      .hero-title { font-size:28px; }
+      .header-badge { display:none; }
+      .header-name { font-size:12px; white-space:nowrap; }
+      .screen-grid,.media-pair,.asset-grid,.rule-grid,.palette { grid-template-columns:1fr; }
+      .flow { grid-template-columns:repeat(2,minmax(0,1fr)); }
+      .timeline-row { grid-template-columns:1fr; gap:5px; }
+      .timeline-copy { font-size:15px; }
+      .table-scroll::before { content:'表は横にスクロールできます'; display:block; margin-bottom:6px; color:var(--color-text-muted); font-size:11px; }
     }
   </style>
 </head>
 
 <body>
-  <header class="header">
-    <div class="wrap">
-      <div class="header-brand">
-        <div class="header-logo">案</div>
-        <span class="header-name">日本の極み スマートギフト｜店頭動画補足資料</span>
-      </div>
-      <span class="header-badge">権利確認前・構成確認用</span>
-    </div>
-  </header>
-
+  <header class="header"><div class="wrap"><div class="header-brand"><div class="header-logo">極</div><span class="header-name">日本の極み スマートギフト｜30秒動画案</span></div><span class="header-badge">カードタイプ編集済み v04</span></div></header>
   <main class="wrap">
     <section class="hero">
-      <p class="hero-eyebrow">CLIENT EXPLANATION / 30-SECOND VIDEO</p>
-      <h1 class="hero-title">おいしさの背景まで、<br>贈る。</h1>
-      <p class="hero-sub">推奨30秒構成と仮編集MP4の対応関係を、百貨店店頭で説明しやすい順番に整理した補足資料です。</p>
-      <p class="hero-date">2026年7月14日｜日本の極み スマートギフト 店頭動画案</p>
-      <div class="co co--warn"><p class="co-title">権利確認前・構成確認用</p><p class="co-text">この公開URLで閲覧できても、動画素材の転送・二次利用・広告出稿・店頭掲出を許可したものではありません。構成承認は素材利用許諾を意味しません。</p></div>
-      <div class="co co--info"><p class="co-title">現在の共有先</p><p class="co-text">依頼元指定のBacklog Gitと、公開依頼に基づくGitHub Pagesで構成・再生確認を行います。公開URLは確認用の入口として扱い、権利台帳・現行商品表示・媒体仕様・実機確認が揃うまで店頭掲出へ進めません。</p></div>
+      <p class="hero-eyebrow">商品を主役にした百貨店店頭30秒動画</p>
+      <h1 class="hero-title">売るのは、<span class="nowrap">スマートギフト。</span><br>映像は、そのおいしさの背景。</h1>
+      <p class="hero-sub">「日本の極み スマートギフト」を3秒以内に認知させ、指定8本の映像は産地・手仕事・つくり手を伝える背景として使う、百貨店店頭向け30秒動画です。商品を見せる手元カットは、専用申込サイトから商品を選ぶ名刺サイズのカードタイプへ変更しました。</p>
+      <div class="co co--gold"><p class="co-title">本資料の位置づけ</p><p class="co-text"><strong>本資料は動画内容をご確認いただくためのものです。</strong> 販売再開や店頭公開の承認を示すものではありません。公式商品ページでは2024年4月20日販売終了と記載されており、今回の販売可否・期間、ポイント機能の現行条件、素材の店頭利用権は書面承認待ちです。</p></div>
+      <p class="hero-date">2026年7月15日｜カードタイプ編集版 v04｜1920×1080 / 30fps / 30秒 / 無音</p>
+      <figure class="hero-video"><video controls muted playsinline preload="metadata" poster="assets/v03/storyboard-frames/frame-00-loop-hold.png"><source src="kiwami-smart-storefront-cardtype-v04.mp4" type="video/mp4"></video><figcaption>30秒編集版｜横型カードタイプ反映｜リンベル指定映像8本使用｜音声ストリームなし</figcaption></figure>
+      <figure class="hero-visual"><img src="assets/v03/storyboard-frames/storyboard-contact-sheet.png" alt="30秒動画9場面の完成画コンタクトシート"></figure>
+      <div class="hero-note"><span class="pill">カードタイプ</span><span class="pill">商品先出し</span><span class="pill">リンベル指定映像8本</span><span class="pill">公式素材起点</span><span class="pill">制作ラベルなし</span></div>
+      <div class="co co--dark"><p class="co-title">現在の状態</p><p class="co-text"><strong>確認用Web掲載・店頭公開承認待ち。</strong> 本URLへの確認用掲載は了承済みです。店頭公開は、今回の販売可否・期間、ポイント機能の現行条件、映像・公式素材の店頭利用権をリンベル商品責任者が書面承認した後です。</p></div>
     </section>
 
-    <nav class="toc" aria-label="目次">
-      <details class="toc-details" open>
-        <summary>目次を開く</summary>
-        <p class="toc-label">目次</p>
-        <ol class="toc-list">
-          <li class="toc-item"><a href="#s0"><span class="toc-num">--</span>結論</a></li>
-          <li class="toc-item"><a href="#s1"><span class="toc-num">01</span>30秒の流れ</a></li>
-          <li class="toc-item"><a href="#s2"><span class="toc-num">02</span>6場面の対応表</a></li>
-          <li class="toc-item"><a href="#s3"><span class="toc-num">03</span>仮編集で確認できること</a></li>
-          <li class="toc-item"><a href="#s4"><span class="toc-num">04</span>次の確定事項</a></li>
-          <li class="toc-item"><a href="#s5"><span class="toc-num">05</span>参照資料</a></li>
-        </ol>
-      </details>
-    </nav>
+    <nav class="toc" aria-label="目次"><details class="toc-details" open><summary>目次を開く</summary><p class="toc-label">目次</p><ol class="toc-list">
+      <li class="toc-item"><a href="#s0"><span class="toc-num">--</span>結論</a></li>
+      <li class="toc-item"><a href="#s1"><span class="toc-num">01</span>設計方針</a></li>
+      <li class="toc-item"><a href="#s2"><span class="toc-num">02</span>完成画</a></li>
+      <li class="toc-item"><a href="#s3"><span class="toc-num">03</span>30秒シナリオ</a></li>
+      <li class="toc-item"><a href="#s4"><span class="toc-num">04</span>指定8本</a></li>
+      <li class="toc-item"><a href="#s5"><span class="toc-num">05</span>公式素材と生成物</a></li>
+      <li class="toc-item"><a href="#s6"><span class="toc-num">06</span>見た目と動き</a></li>
+      <li class="toc-item"><a href="#s7"><span class="toc-num">07</span>編集仕様</a></li>
+      <li class="toc-item"><a href="#s8"><span class="toc-num">08</span>検収</a></li>
+    </ol></details></nav>
 
     <section id="s0" class="sec">
-      <p class="sec-eyebrow">EXECUTIVE SUMMARY</p>
-      <h2 class="sec-title">結論：6場面すべてが推奨30秒構成に沿っています</h2>
-      <p class="lead-copy">止める → 信頼をつくる → 選べる価値を伝える → 売場で相談へつなぐ。</p>
-      <div class="co co--ok">
-        <p class="co-title">構成の適合判定：企画意図・秒数・コピーは一致</p>
-        <p class="co-text">既存の企画書にある<strong>0–3秒／3–7秒／7–11秒／11–16秒／16–23秒／23–30秒</strong>の6区間と、仮編集MP4の区切り・テロップは一致しています。各場面に共通の「日本の極み スマートギフト｜受け取った方が選べる食品ギフト」を置き、途中から見ても商品価値が分かる設計です。</p>
+      <p class="sec-eyebrow">結論</p><h2 class="sec-title">カードタイプ反映の30秒版まで編集済み</h2>
+      <p class="lead-copy">主軸は「おいしさの背景まで、贈る。」。<br>商品、贈る価値、選ぶ価値、背景、機能、売場案内を30秒でつなぎます。</p>
+      <div class="decision-grid">
+        <article class="decision"><div class="decision-label">主役</div><div class="decision-title">スマートギフトが主役</div><div class="decision-text">冒頭3秒で商品名と「選べるギフト」であることを伝えます。</div></article>
+        <article class="decision"><div class="decision-label">指定映像の役割</div><div class="decision-title">8本は背景説明</div><div class="decision-text">10〜17秒だけに置き、産地と手仕事の空気を添えます。</div></article>
+        <article class="decision"><div class="decision-label">完成度</div><div class="decision-title">編集完了・店頭公開承認待ち</div><div class="decision-text">本編品質は本番候補。店頭公開は販売条件と利用権の書面承認後です。</div></article>
       </div>
-      <div class="co co--info">
-        <p class="co-title">今回ご判断いただきたいこと</p>
-        <p class="co-text"><strong>この30秒案を構成案としてご承認いただけるか、ご判断ください。</strong>ここで確認するのは企画の骨子です。店頭掲出、対外配布、完成尺、画面比率、素材の利用条件は別途確定します。</p>
-      </div>
-      <div class="co co--warn">
-        <p class="co-title">ただし、現段階は「構成確認用の仮編集」です</p>
-        <p class="co-text">1〜4場面は取得動画を使った構成確認、5〜6場面は支給資料由来の静止画を仮置きしています。店頭掲出・対外配布・本編集への流用は、素材ごとの利用許諾書などの確認資料、現行商品・クリーンな元マスター、正式な交換サイト画面、店頭媒体仕様を確定した後に行います。</p>
-      </div>
+      <div class="co co--gold"><p class="co-title">今回の確定事項</p><p class="co-text">名刺サイズの横型カード、シナリオ、コピー、900フレームの編集指示表、8本の使用区間と画角調整、9場面の完成画を30秒MP4へ反映しました。カード面の旧ポイント数値は表示せず、公式ロゴと公式配色を基準に合成しています。</p></div>
     </section>
 
     <section id="s1" class="sec">
-      <p class="sec-eyebrow">01 — FLOW</p>
-      <h2 class="sec-title">30秒で伝える順番</h2>
-      <p class="sec-text">百貨店の通路では、最初から最後まで見てもらえるとは限りません。そのため、各区間を単独でも意味が通る短いメッセージにしています。</p>
+      <p class="sec-eyebrow">01 — CREATIVE DIRECTION</p><h2 class="sec-title">「商品 → 背景 → 売場」の一本にする</h2>
+      <p class="sec-text">映像の上質さを先に見せるのではなく、まず何を売るかを伝えます。指定映像は、商品の選択肢ではなく「日本の極み」が大切にしてきた背景として機能させます。</p>
       <div class="flow">
-        <div class="flow-item"><div class="flow-num">01 / 0–3秒</div><div class="flow-title">まず止める</div><div class="flow-desc">一動作のシズル</div></div>
-        <div class="flow-item"><div class="flow-num">02 / 3–7秒</div><div class="flow-title">背景を見せる</div><div class="flow-desc">産地・つくり手</div></div>
-        <div class="flow-item"><div class="flow-num">03 / 7–11秒</div><div class="flow-title">質感を伝える</div><div class="flow-desc">旬・手仕事</div></div>
-        <div class="flow-item"><div class="flow-num">04 / 11–16秒</div><div class="flow-title">幅を見せる</div><div class="flow-desc">日本各地の味</div></div>
-        <div class="flow-item"><div class="flow-num">05 / 16–23秒</div><div class="flow-title">選べるを説明</div><div class="flow-desc">カード・Web</div></div>
-        <div class="flow-item"><div class="flow-num">06 / 23–30秒</div><div class="flow-title">相談へ着地</div><div class="flow-desc">ギフトサロン</div></div>
+        <div class="flow-step flow-step--gold">商品認知<br>0.3–3.0</div><div class="flow-step">贈る価値<br>3.0–6.5</div><div class="flow-step">選ぶ価値<br>6.5–10.0</div><div class="flow-step flow-step--dark">手仕事<br>10.0–13.5</div><div class="flow-step flow-step--dark">産地<br>13.5–17.0</div><div class="flow-step">ポイント機能<br>17.0–21.5</div><div class="flow-step flow-step--gold">贈答価値・売場<br>21.5–29.7</div>
       </div>
-      <div class="co co--info">
-        <p class="co-title">この順番にする理由</p>
-        <p class="co-text">食品の色・湯気・手の動きで視線をつかみ、産地と手仕事で上質さの根拠を示し、最後に「受け取った方が選べる」というスマートギフトの違いへ進みます。制度説明から始めないため、食のプレミアム感とサービス理解を両立できます。</p>
-      </div>
+      <div class="table-scroll"><table class="tbl"><thead><tr><th>案</th><th>考え方</th><th>長所</th><th>判定</th></tr></thead><tbody>
+        <tr><td><strong>商品先出し＋背景紹介</strong></td><td>商品を先に提示し、8本で背景を添える</td><td>店頭、無音、途中視聴、ループに強い</td><td><span class="bdg bdg--ok">採用</span></td></tr>
+        <tr><td>産地ドキュメンタリー</td><td>つくり手から商品へ着地</td><td>映像美は強いが商品理解が遅い</td><td><span class="bdg bdg--wait">不採用</span></td></tr>
+        <tr><td>機能デモ</td><td>ポイント機能を中心に説明</td><td>仕組みは明快だが贈答価値が弱い</td><td><span class="bdg bdg--wait">不採用</span></td></tr>
+      </tbody></table></div>
     </section>
 
     <section id="s2" class="sec">
-      <p class="sec-eyebrow">02 — ALIGNMENT CHECK</p>
-      <h2 class="sec-title">6場面の対応表</h2>
-      <div class="table-scroll">
-        <table class="tbl">
-          <thead><tr><th>時間</th><th>場面の役割</th><th>表示コピー</th><th>仮編集の映像</th><th>判定</th></tr></thead>
-          <tbody>
-            <tr><td>0–3秒</td><td><strong>一動作で、まず止める</strong></td><td>おいしさの背景まで、贈る。</td><td>スマート抹茶の一動作</td><td><span class="bdg bdg--ok">一致</span></td></tr>
-            <tr><td>3–7秒</td><td><strong>産地の空気と、つくり手</strong></td><td>産地と、つくり手が見える。</td><td>つや姫の産地・生産者</td><td><span class="bdg bdg--ok">一致</span></td></tr>
-            <tr><td>7–11秒</td><td><strong>手仕事を、質感で伝える</strong></td><td>旬と手仕事を、選び抜く。</td><td>焼き菓子の手作業</td><td><span class="bdg bdg--ok">一致</span></td></tr>
-            <tr><td>11–16秒</td><td><strong>選択肢の広がり</strong></td><td>日本各地の味を、ひとつのギフトに。</td><td>グルメカタログの商品群</td><td><span class="bdg bdg--ok">一致</span></td></tr>
-            <tr><td>16–23秒</td><td><strong>“スマート”の意味を見せる</strong></td><td>受け取った方が、選べる。</td><td>支給資料のカード参考静止画</td><td><span class="bdg bdg--wait">構成一致・仮置き</span></td></tr>
-            <tr><td>23–30秒</td><td><strong>贈答感と売場案内で着地</strong></td><td>日本の極み スマートギフト<br>ギフトサロンでおたずねください</td><td>支給資料のPRブース参考静止画</td><td><span class="bdg bdg--wait">構成一致・仮置き</span></td></tr>
-          </tbody>
-        </table>
-      </div>
-      <div class="co co--info">
-        <p class="co-title">判定の読み方</p>
-        <p class="co-text"><strong>「一致」</strong>は、企画書の役割・秒数・表示コピーと仮編集がそのまま対応している区間です。<strong>「構成一致・仮置き」</strong>は役割・秒数・コピーは一致しているものの、本編集では現行パッケージ、正式な交換サイト画面、正式ロゴ、承認済み商品写真へ差し替える区間です。</p>
+      <p class="sec-eyebrow">02 — FINAL-FRAME STORYBOARD</p><h2 class="sec-title">9場面の完成画</h2>
+      <p class="sec-text">以下の9枚を、構図・コピー・色・余白の確認用マスターとします。動画内には場面番号や資料上の注記は表示しません。</p>
+      <div class="screen-grid">
+        <figure class="screen-card"><img src="assets/v03/storyboard-frames/frame-00-loop-hold.png" alt="ループ保持の商品画"><figcaption class="screen-caption"><div class="screen-time">0.0–0.3 / 29.7–30.0</div><div class="screen-title">ループ保持</div><div class="screen-copy">先頭と末尾で同じ完成画を使います。</div></figcaption></figure>
+        <figure class="screen-card"><img src="assets/v03/storyboard-frames/frame-01-product.png" alt="商品認知の完成画"><figcaption class="screen-caption"><div class="screen-time">0.3–3.0</div><div class="screen-title">商品認知</div><div class="screen-copy">日本の極みを、選べるギフトに。</div></figcaption></figure>
+        <figure class="screen-card"><img src="assets/v03/storyboard-frames/frame-02-giver.png" alt="贈り主価値の完成画"><figcaption class="screen-caption"><div class="screen-time">3.0–6.5</div><div class="screen-title">贈り主の価値</div><div class="screen-copy">贈る方には、選びやすさを。</div></figcaption></figure>
+        <figure class="screen-card"><img src="assets/v03/storyboard-frames/frame-03-receiver.png" alt="受取人価値の完成画"><figcaption class="screen-caption"><div class="screen-time">6.5–10.0</div><div class="screen-title">受取人の価値</div><div class="screen-copy">受け取る方には、選ぶ楽しさを。</div></figcaption></figure>
+        <figure class="screen-card"><img src="assets/v03/storyboard-frames/frame-04-montage-a.png" alt="手仕事の4分割映像"><figcaption class="screen-caption"><div class="screen-time">10.0–13.5</div><div class="screen-title">ブランド背景 A</div><div class="screen-copy">つくり手の手仕事。</div></figcaption></figure>
+        <figure class="screen-card"><img src="assets/v03/storyboard-frames/frame-05-montage-b.png" alt="産地の4分割映像"><figcaption class="screen-caption"><div class="screen-time">13.5–17.0</div><div class="screen-title">ブランド背景 B</div><div class="screen-copy">産地の風景。</div></figcaption></figure>
+        <figure class="screen-card"><img src="assets/v03/storyboard-frames/frame-06-points.png" alt="ポイント機能の完成画"><figcaption class="screen-caption"><div class="screen-time">17.0–21.5</div><div class="screen-title">ポイント機能</div><div class="screen-copy">分ける、合わせる、加える。</div></figcaption></figure>
+        <figure class="screen-card"><img src="assets/v03/storyboard-frames/frame-07-value.png" alt="贈答価値の完成画"><figcaption class="screen-caption"><div class="screen-time">21.5–25.0</div><div class="screen-title">贈答価値</div><div class="screen-copy">おいしさの背景まで、贈る。</div></figcaption></figure>
+        <figure class="screen-card"><img src="assets/v03/storyboard-frames/frame-08-cta.png" alt="売場案内の完成画"><figcaption class="screen-caption"><div class="screen-time">25.0–29.7</div><div class="screen-title">売場案内</div><div class="screen-copy">詳しくは、売場係員へおたずねください。</div></figcaption></figure>
       </div>
     </section>
 
     <section id="s3" class="sec">
-      <p class="sec-eyebrow">03 — ROUGHCUT</p>
-      <h2 class="sec-title">仮編集で確認できること</h2>
-      <div class="video-box">
-        <video controls playsinline preload="metadata" src="kiwami-smart-storefront-roughcut-v01.mp4">
-          お使いの環境では動画を再生できません。<a href="kiwami-smart-storefront-roughcut-v01.mp4">MP4を開く</a>
-        </video>
-        <div class="video-caption">仮編集 v01｜30秒・無音・1920×1080・H.264｜店頭掲出前の構成確認用<br>共有先は依頼元指定のBacklog Gitと公開確認用GitHub Pages。公開URLで再生できても、素材の二次利用・広告出稿・店頭掲出は未承認です。<br><a href="kiwami-smart-storefront-roughcut-v01.mp4">動画ファイルを別ウィンドウで開く</a></div>
-      </div>
-      <div class="status-grid">
-        <div class="status-card status-card--ok"><div class="status-label">確認済み</div><div class="status-title">30秒・6区間</div><div class="status-desc">6場面の秒数、順番、各場面の表示コピーが企画書と一致しています。</div></div>
-        <div class="status-card status-card--ok"><div class="status-label">確認済み</div><div class="status-title">無音で成立</div><div class="status-desc">音声トラックなし。テロップと画だけで「食・背景・選べる・相談」が伝わる構成です。</div></div>
-        <div class="status-card status-card--hold"><div class="status-label">本編集で確定</div><div class="status-title">素材・媒体・権利</div><div class="status-desc">元マスター、現行商品、画面仕様、掲出期間、利用許諾は本編集前に確定します。</div></div>
-      </div>
-      <div class="co co--warn">
-        <p class="co-title">このMP4を完成動画として掲出しないでください</p>
-        <p class="co-text">YouTube取得動画と支給資料の静止画を使った仮編集であり、完成素材ではありません。広告出稿・店頭掲出は、権利台帳の証憑確認、現行商品・表示・売場案内の承認、媒体の実機再生テストが完了してから行います。</p>
+      <p class="sec-eyebrow">03 — 30-SECOND SCENARIO</p><h2 class="sec-title">コピーと役割を秒単位で固定</h2>
+      <div class="timeline">
+        <div class="timeline-row"><div class="timeline-time">0.0–0.3</div><div class="timeline-role">ループ保持</div><div class="timeline-copy">表示コピーなし<div class="timeline-note">商品画を静止。末尾と画素一致。</div></div></div>
+        <div class="timeline-row"><div class="timeline-time">0.3–3.0</div><div class="timeline-role">商品認知</div><div class="timeline-copy">日本の極みを、選べるギフトに。</div></div>
+        <div class="timeline-row"><div class="timeline-time">3.0–6.5</div><div class="timeline-role">贈り主</div><div class="timeline-copy">贈る方には、選びやすさを。</div></div>
+        <div class="timeline-row"><div class="timeline-time">6.5–10.0</div><div class="timeline-role">受取人</div><div class="timeline-copy">受け取る方には、選ぶ楽しさを。<div class="timeline-note">日本各地の美味から、好みに合うものを選べます。</div></div></div>
+        <div class="timeline-row timeline-row--video"><div class="timeline-time">10.0–13.5</div><div class="timeline-role">背景A</div><div class="timeline-copy">つくり手の手仕事。<div class="timeline-note">辻蕎麦／焼き菓子／シャインマスカット／ラ・フランス。</div></div></div>
+        <div class="timeline-row timeline-row--video"><div class="timeline-time">13.5–17.0</div><div class="timeline-role">背景B</div><div class="timeline-copy">産地の風景。<div class="timeline-note">つや姫／ラ・フランス／桃／峰満イエロー。</div></div></div>
+        <div class="timeline-row"><div class="timeline-time">17.0–21.5</div><div class="timeline-role">機能</div><div class="timeline-copy">ポイントを、分ける。合わせる。加える。<div class="timeline-note">※利用条件があります。旧数値は表示しません。</div></div></div>
+        <div class="timeline-row"><div class="timeline-time">21.5–25.0</div><div class="timeline-role">贈答価値</div><div class="timeline-copy">おいしさの背景まで、贈る。</div></div>
+        <div class="timeline-row"><div class="timeline-time">25.0–29.7</div><div class="timeline-role">売場案内</div><div class="timeline-copy">選ぶ楽しさまで、贈る。<div class="timeline-note">詳しくは、売場係員へおたずねください。</div></div></div>
+        <div class="timeline-row"><div class="timeline-time">29.7–30.0</div><div class="timeline-role">ループ保持</div><div class="timeline-copy">表示コピーなし<div class="timeline-note">先頭の商品画へつなぎます。</div></div></div>
       </div>
     </section>
 
     <section id="s4" class="sec">
-      <p class="sec-eyebrow">04 — DECISION &amp; NEXT</p>
-      <h2 class="sec-title">次に確定する4点</h2>
-      <p class="sec-text">構成案の承認後、下記4点が揃えば本編集へ着手できます。</p>
-      <div class="spec-list">
-        <div class="spec-item"><p class="spec-key">1｜構成・コピー</p><p class="spec-value">推奨コンセプト「おいしさの背景まで、贈る。」と6場面の順番・コピーを承認。15秒・45秒へ展開する場合は、同じ価値のどこまでを残すかを指定。</p></div>
-        <div class="spec-item"><p class="spec-key">2｜現行素材</p><p class="spec-value">現行パッケージ、カード、カタログ、ロゴ、商品写真、正式な交換サイト画面、必要な元マスターを支給または使用承認。終売・旧表示の素材は差し替え。</p></div>
-        <div class="spec-item"><p class="spec-key">3｜店頭仕様</p><p class="spec-value">設置店舗・売場、画面比率・解像度、視認距離、プレイヤー、音の可否、掲出期間、入稿締切を確定。</p></div>
-        <div class="spec-item"><p class="spec-key">4｜権利・表示</p><p class="spec-value">映像・静止画・肖像・商標・音源・フォント・商品表示について、媒体・地域・期間・編集・店頭上映・対外配布の利用許諾書などの確認資料を台帳で確認。</p></div>
+      <p class="sec-eyebrow">04 — SELECTED VIDEO SERIES</p><h2 class="sec-title">リンベル指定映像8本を2つの背景モンタージュへ</h2>
+      <p class="sec-text">YouTube掲載版から取得した全8本を1080pで揃えました。4本ずつ同時再生し、下部20%を商品名とコピーの固定帯にします。映像は商品一覧ではなくブランドの背景としてのみ使います。YouTubeで公開されていること自体は店頭二次利用の許諾根拠とせず、公開前に利用証憑を確認します。</p>
+      <div class="media-pair">
+        <figure class="media-panel"><img src="assets/v03/video-keyframes/montage-a-clean-preview.png" alt="モンタージュAの実映像画角"><figcaption>A｜蕎麦の手仕事、焼き菓子工程、雨粒と土、ラ・フランスと贈答箱</figcaption></figure>
+        <figure class="media-panel"><img src="assets/v03/video-keyframes/montage-b-clean-preview.png" alt="モンタージュBの実映像画角"><figcaption>B｜朝日に揺れる稲穂、果樹の根元、桃の籠、果樹園を歩く作り手</figcaption></figure>
       </div>
-      <div class="co co--info">
-        <p class="co-title">本編集前の再生確認（実機受入）</p>
-        <p class="co-text">構成・コピーの承認後、<strong>画面比率／解像度／視認距離／安全な表示範囲／無音再生／ループ継ぎ目／再生機器との互換性／掲出終了時の差し替え／直前承認版へ戻す手順</strong>を、実機または同等環境で確認します。尺・比率・動画形式は媒体仕様確定後の暫定値です。</p>
-      </div>
-      <div class="co co--ok">
-        <p class="co-title">今回ご判断いただきたいこと</p>
-        <p class="co-text">まずは<strong>この30秒案を構成案としてご承認いただけるか、ご判断ください。</strong>これは構成の承認であり、店頭掲出・対外配布・完成尺や媒体仕様の承認ではありません。素材・権利・媒体条件が揃った後に本編集へ着手します。</p>
-      </div>
+      <div class="table-scroll"><table class="tbl"><thead><tr><th>組</th><th>動画ID</th><th>使用区間</th><th>画</th><th>画角調整</th></tr></thead><tbody>
+        <tr><td>A1</td><td>XVD4pA4-EMQ</td><td>F972–1055</td><td>蕎麦生地を切る手元</td><td>右・下の字幕域を外す</td></tr>
+        <tr><td>A2</td><td>5bntWw1EKXw</td><td>F4000–4083</td><td>バターを混ぜる焼き菓子工程</td><td>中央16:7.2</td></tr>
+        <tr><td>A3</td><td>gpdUX9xHRdw</td><td>F3650–3733</td><td>雨粒と土</td><td>中央16:7.2</td></tr>
+        <tr><td>A4</td><td>1R8DJRiTC08</td><td>F3585–3668</td><td>ラ・フランスと贈答箱</td><td>中央16:7.2</td></tr>
+        <tr><td>B1</td><td>Hw7aj0J5ATs</td><td>F534–617</td><td>朝日に揺れる稲穂</td><td>右・下の字幕域を外す</td></tr>
+        <tr><td>B2</td><td>ddIkI2rv8EQ</td><td>F636–719</td><td>苔むした果樹の根元</td><td>右・下の字幕域を外す</td></tr>
+        <tr><td>B3</td><td>4gmsDdcNATY</td><td>F6354–6563</td><td>籠いっぱいの桃</td><td>中央16:7.2</td></tr>
+        <tr><td>B4</td><td>sZFi5XeGspc</td><td>F145–232</td><td>果樹園を歩く作り手</td><td>中央16:7.2</td></tr>
+      </tbody></table></div>
     </section>
 
     <section id="s5" class="sec">
-      <p class="sec-eyebrow">05 — REFERENCES</p>
-      <h2 class="sec-title">参照資料</h2>
-      <ul class="mini-list">
-        <li>支給PowerPoint「日本の極みSMG開発概要n (1)」</li>
-        <li>支給画像「image.png」</li>
-        <li><a href="https://www.youtube.com/playlist?list=PLwP3ZDV2ASevJ8mOWbdJPH2emd6r0PxQl" target="_blank" rel="noopener noreferrer">リンベル公式YouTube再生リスト「日本の極み」</a></li>
-        <li>企画・絵コンテ本体：<code>kiwami-smart-department-store-video-plan.html</code></li>
-        <li>仮編集：<code>kiwami-smart-storefront-roughcut-v01.mp4</code>（30秒・無音・H.264）</li>
-        <li>公開確認用：<a href="https://knomoto-comrade.github.io/kiwami-smart-storefront-video/" target="_blank" rel="noopener noreferrer">GitHub Pages</a>（HTML・MP4の再生確認）</li>
-      </ul>
-      <div class="co co--info">
-        <p class="co-title">素材利用について</p>
-        <p class="co-text">構成承認は素材利用許諾を意味しません。本編集・店頭上映・対外配布の前に、映像・静止画・肖像・商標・音源・フォント・商品表示を素材単位で確認し、利用許諾書などの確認資料と利用条件を権利台帳へ記録します。</p>
+      <p class="sec-eyebrow">05 — OFFICIAL-ASSET-LED DESIGN</p><h2 class="sec-title">生成も、公式素材から離れない</h2>
+      <p class="sec-text">公式ページと支給資料から商品、背景、食品、ポイント機能を選定しました。商品・ロゴ・カード面は支給資料と公式SVG／PNGを基準とし、生成画像で描き直しません。</p>
+      <div class="asset-grid">
+        <article class="asset-card"><img src="assets/v03/official-selected/product-hero-card-and-box.png" alt="公式の商品一式"><p>公式商品一式。右端の旧ポイント数値だけ画角から外します。</p></article>
+        <article class="asset-card"><img src="assets/v03/generated-official-derived/cardtype-hand-official-v04.png" alt="横型カードタイプを持つ手"><p>支給資料の横型カード面を基準にし、旧ポイント数値を除外。手と背景だけを生成補完しています。</p></article>
+        <article class="asset-card asset-card--cover"><img src="assets/v03/official-selected/food-lineup-background.jpg" alt="公式の食品コラージュ"><p>受け取る楽しさと、おいしさの幅を表現します。</p></article>
+        <article class="asset-card asset-card--cover"><img src="assets/v03/generated-official-derived/brand-gold-video-plate-01.png" alt="公式素材参照の金茶背景"><p>公式金茶背景を参照した商品・CTA用プレート。</p></article>
+        <article class="asset-card asset-card--cover"><img src="assets/v03/generated-official-derived/brand-dark-video-plate-01.png" alt="公式素材参照の濃茶背景"><p>黒い冊子と公式曲線を参照したモンタージュ用プレート。</p></article>
+        <article class="asset-card asset-card--cover"><img src="assets/v03/official-selected/gift-presentation-packaging.jpg" alt="公式の贈答パッケージ"><p>贈答の設えを示す公式参考素材。</p></article>
+      </div>
+      <figure class="board"><img src="assets/v03/styleboard/kiwami-official-derived-styleboard-01.png" alt="公式素材起点のスタイルボード"><figcaption class="board-caption">公式素材を参照入力にしたスタイルボードです。配色・余白・質感の方向性だけに使い、生成された文字や商品パッケージは完成画へ採用しません。</figcaption></figure>
+      <div class="co co--dark"><p class="co-title">旧情報と公開承認の扱い</p><p class="co-text"><a href="https://www.ringbell.co.jp/smartgift/kiwami/" target="_blank" rel="noopener noreferrer">公式商品ページ</a>は2024年4月20日の販売終了を掲載しています。本動画では旧価格、旧ポイント数値、商品点数、コース数、旧Web画面を表示しません。編集は開始できますが、店頭公開はリンベル商品責任者による今回の百貨店販売可否・期間と、分割・合算・加算の現行条件の書面承認後とします。</p></div>
+    </section>
+
+    <section id="s6" class="sec">
+      <p class="sec-eyebrow">06 — VISUAL &amp; MOTION SYSTEM</p><h2 class="sec-title">百貨店らしく、静かに上質に</h2>
+      <div class="palette"><div class="swatch" style="background:#c09a4a">Gold<br>#C09A4A</div><div class="swatch" style="background:#17130f">Dark Brown<br>#17130F</div><div class="swatch" style="background:#533a18">Text Brown<br>#533A18</div><div class="swatch swatch--ivory" style="background:#f6f0e3">Ivory<br>#F6F0E3</div></div>
+      <div class="rule-grid">
+        <article class="rule"><div class="rule-title">文字</div><div class="rule-text">主コピーはヒラギノ明朝 ProN W6。補足はヒラギノ角ゴシック W4。左右96px、上下54pxの安全域を守ります。</div></article>
+        <article class="rule"><div class="rule-title">動き</div><div class="rule-text">背景と商品は最大2〜3%の緩いプッシュイン。基本はハードカットで、派手なワイプやフレアを使いません。</div></article>
+        <article class="rule"><div class="rule-title">モンタージュ</div><div class="rule-text">2×2を3.5秒固定。下部216pxを濃茶帯にし、商品名を消しません。</div></article>
+        <article class="rule"><div class="rule-title">音</div><div class="rule-text">店頭で音が出なくても成立する設計です。主納品は音声ストリームなしとします。</div></article>
       </div>
     </section>
+
+    <section id="s7" class="sec">
+      <p class="sec-eyebrow">07 — EDITOR HANDOFF</p><h2 class="sec-title">900フレームを固定</h2>
+      <div class="spec-grid">
+        <article class="spec"><div class="spec-key">SEQUENCE</div><div class="spec-value">1920×1080<br>30.000fps</div></article>
+        <article class="spec"><div class="spec-key">DURATION</div><div class="spec-value">30.000秒<br>900 frames</div></article>
+        <article class="spec"><div class="spec-key">AUDIO</div><div class="spec-value">無音<br>0 streams</div></article>
+        <article class="spec"><div class="spec-key">COLOR</div><div class="spec-value">Rec.709<br>SDR</div></article>
+        <article class="spec"><div class="spec-key">FILE</div><div class="spec-value">MP4<br>約57MB</div></article>
+        <article class="spec"><div class="spec-key">PLAYBACK</div><div class="spec-value">H.264 High@4.1<br>CBR 16Mbps</div></article>
+      </div>
+      <div class="co co--gold"><p class="co-title">編集済み確認用マスター</p><p class="co-text"><code>kiwami-smart-storefront-cardtype-v04.mp4</code>を本番候補の確認用マスターとします。シナリオと編集指示表はカードタイプ反映内容へ同期しています。</p></div>
+      <p class="sec-text">CTAはF750–890の141フレームで完成表示し、F891でループ保持へハードカットします。先頭9フレームと末尾9フレームは同じプリコンポーズを使います。</p>
+    </section>
+
+    <section id="s8" class="sec">
+      <p class="sec-eyebrow">08 — 検収</p><h2 class="sec-title">確認済み項目と店頭公開前の確認</h2>
+      <h3 class="sub-title">確認済み</h3>
+      <ul class="check-list">
+        <li>30.000秒、900フレーム、1920×1080、30fps、音声0ストリーム</li>
+        <li>動画画面に制作中表示、版数、透かし、タイムコードがない</li>
+        <li>旧価格、旧ポイント数値、商品点数、コース数がない</li>
+        <li>先頭9フレームと末尾9フレームが視覚上一致し、ループ時に黒味がない</li>
+        <li>CTAが141フレームで完全表示される</li>
+        <li>3周連続再生で黒味・ジャンプ・音切れがない</li>
+        <li>全コピーが安全域内で、完成画9枚と一致する</li>
+        <li>使用素材の照合記録、動画仕様、境界静止画、コピー照合表を作成済み</li>
+      </ul>
+      <h3 class="sub-title">店頭公開前に確認</h3>
+      <ul class="pending-list">
+        <li>店頭公開前に、販売期間・ポイント機能・素材利用権の承認日、責任者、確定条件を記録する</li>
+        <li>ポイント機能が未承認の場合、17.0–21.5秒の機能訴求は店頭公開版から除外する</li>
+        <li>予定プレイヤーで3周ループ、画面サイズ、輝度、2〜3m視距離、端部欠けを実機確認する</li>
+      </ul>
+      <div class="co co--ok"><p class="co-title">編集完了判定</p><p class="co-text"><strong>本番候補の30秒版まで編集済みです。</strong> 店舗固有の売場名を入れず「詳しくは、売場係員へおたずねください。」で着地しています。店頭公開は、今回の販売期間、ポイント機能条件、映像・公式素材の店頭利用権の書面承認後とします。</p></div>
+    </section>
   </main>
-
-  <footer class="footer">
-    <div class="wrap"><p class="footer-text">© 2026 株式会社カムラッド — 日本の極み スマートギフト 店頭動画補足資料<br>第三者素材の権利は各権利者に帰属します。権利確認前・構成確認用。店頭掲出は未承認。</p></div>
-  </footer>
-
+  <footer class="footer"><div class="wrap"><p class="footer-text">資料制作：株式会社カムラッド。商品名・商標・画像・映像の権利は各権利者に帰属します。<br>対象：日本の極み スマートギフト 百貨店店頭30秒動画｜カードタイプ編集版 v04</p></div></footer>
 </body>
 <script>
-(function() {
-  const sections = document.querySelectorAll('.sec[id]');
-  const tocItems = document.querySelectorAll('.toc-item');
-  const tocMap = {};
-  tocItems.forEach(function(item) { var a = item.querySelector('a'); if (a) tocMap[a.getAttribute('href').replace('#','')] = item; });
-  var current = '';
-  var observer = new IntersectionObserver(function(entries) {
-    entries.forEach(function(entry) { if (entry.isIntersecting) current = entry.target.id; });
-    tocItems.forEach(function(item) { item.classList.remove('is-active'); });
-    if (current && tocMap[current]) tocMap[current].classList.add('is-active');
-  }, { rootMargin: '-10% 0px -80% 0px', threshold: 0 });
-  sections.forEach(function(sec) { observer.observe(sec); });
-  if (tocItems.length > 0) tocItems[0].classList.add('is-active');
-  if (window.innerWidth <= 959) { var details = document.querySelector('.toc-details'); if (details) details.removeAttribute('open'); }
+(function(){
+  const sections=document.querySelectorAll('.sec[id]');
+  const items=document.querySelectorAll('.toc-item');
+  const map={};
+  items.forEach(function(item){const a=item.querySelector('a');if(a)map[a.getAttribute('href').slice(1)]=item;});
+  let current='';
+  const observer=new IntersectionObserver(function(entries){entries.forEach(function(entry){if(entry.isIntersecting)current=entry.target.id;});items.forEach(function(item){item.classList.remove('is-active');});if(current&&map[current])map[current].classList.add('is-active');},{rootMargin:'-10% 0px -80% 0px',threshold:0});
+  sections.forEach(function(section){observer.observe(section);});
+  if(items.length)items[0].classList.add('is-active');
+  if(window.innerWidth<=959){const details=document.querySelector('.toc-details');if(details)details.removeAttribute('open');}
 })();
 </script>
 </html>
